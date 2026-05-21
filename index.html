@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Regerstion Form</title>
+</head>
+<body>
+
+    <div align="center" class="container">
+    <div class="header">
+    <h1>User Regerstion Form</h1>
+    </div>
+    <form action="connect.php" method="post">
+        <label for="">First Name :
+            <input type="text" id="Name" name="firstName" placeholder="Enter a First Name">
+        </label>
+        <br>
+        <br>
+        <label for="">Last Name :
+            <input type="text" name="lastName" id="Name" placeholder="Enter a Last Name">
+        </label>
+        <br>
+        <br>
+        <label for="">Email :
+            <input type="email" name="email" id="email" placeholder="Enter a mail" required>
+        </label>
+        <br>
+        <br>
+        <label for="" >Gender : </label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="m" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="f" required>
+        <br>
+        <br>
+        <label for="">Password
+            <input type="password" name="password" id="password" required>
+        </label>
+        <br>
+        <br>
+        <label for="">Phone Number :
+            <input type="tel" name="number"  pattern="[0-9]{10}"  maxlength="10"  oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10)" placeholder="Enter 10 digit number" id="contact_number" required>
+        </label>
+        <br>
+        <br>
+        <button type="submit">Submit Form</button>
+    </form>
+    </div>
+</body>
+</html>
